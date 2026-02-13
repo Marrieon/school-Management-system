@@ -1,0 +1,119 @@
+.teacher-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #1B1931;
+}
+
+body.dark .dashboard-title {
+  color: #E9BC89;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.section {
+  background-color: #ED9E59;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+body.dark .section {
+  background-color: #44174E;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #1B1931;
+}
+
+body.dark .section-title {
+  color: #E9BC89;
+}
+
+.student-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid #662249;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  background-color: #E9BC89;
+}
+
+body.dark .student-item {
+  background-color: #1B1931;
+  border-color: #ED9E59;
+}
+
+.student-item.warning {
+  border-color: #A34054;
+  background-color: #A34054;
+  color: #E9BC89;
+}
+
+.student-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.student-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.chatroom-item, .group-item {
+  padding: 0.5rem;
+  border: 1px solid #662249;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  background-color: #E9BC89;
+}
+
+body.dark .chatroom-item, body.dark .group-item {
+  background-color: #1B1931;
+  border-color: #ED9E59;
+}
+
+.action-button {
+  background-color: #A34054;
+  color: #E9BC89;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.action-button.primary {
+  background-color: #44174E;
+}
+
+.action-button.success {
+  background-color: #ED9E59;
+  color: #1B1931;
+}
+
+.action-button.danger {
+  background-color: #A34054;
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}

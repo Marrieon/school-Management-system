@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: todo-app
+    env: python
+    plan: free
+    buildCommand: "npm install && npm run build && ls -la dist"
+    startCommand: "gunicorn app:app"              # Starts Flask
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.9"
+      - key: DATABASE_URL
+        value: "sqlite:///tasks.db"
+    disk:
+      name: data
+      mountPath: "/opt/render/project/src"
+      sizeGB: 1

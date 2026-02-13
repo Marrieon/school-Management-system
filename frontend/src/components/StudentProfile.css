@@ -1,0 +1,113 @@
+.study-group {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #ED9E59;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  
+  body.dark .study-group {
+    background-color: #44174E;
+  }
+  
+  .group-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #1B1931;
+  }
+  
+  body.dark .group-title {
+    color: #E9BC89;
+  }
+  
+  .group-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1B1931;
+  }
+  
+  body.dark .group-name {
+    color: #E9BC89;
+  }
+  
+  .section {
+    margin-top: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #1B1931;
+  }
+  
+  body.dark .section-title {
+    color: #E9BC89;
+  }
+  
+  .member-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid #662249;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #E9BC89;
+  }
+  
+  body.dark .member-item {
+    background-color: #1B1931;
+    border-color: #ED9E59;
+  }
+  
+  .member-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  .add-member {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .input-field {
+    padding: 0.5rem;
+    border: 1px solid #662249;
+    border-radius: 0.5rem;
+    background-color: #E9BC89;
+    color: #1B1931;
+  }
+  
+  body.dark .input-field {
+    background-color: #1B1931;
+    color: #E9BC89;
+    border-color: #ED9E59;
+  }
+  
+  .action-button {
+    background-color: #A34054;
+    color: #E9BC89;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .action-button.danger {
+    background-color: #662249;
+  }
+  
+  @media (max-width: 480px) {
+    .study-group {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  
+    .group-title {
+      font-size: 1.5rem;
+    }
+  }

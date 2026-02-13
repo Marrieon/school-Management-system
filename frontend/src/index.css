@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background-color: #ECF0F1;
+  color: #34495E;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #2C3E50;
+  color: #ECF0F1;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #3498DB;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+body.dark .spinner {
+  border-color: rgba(255, 255, 255, 0.1);
+  border-left-color: #F1C40F;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

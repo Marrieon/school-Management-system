@@ -1,0 +1,126 @@
+.app {
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    background-color: #2C3E50;
+    padding: 1rem;
+  }
+  
+  .navbar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-title {
+    color: #ECF0F1;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .notification-bell {
+    color: #ECF0F1;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    position: relative;
+  }
+  
+  .notification-bell.has-unread {
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+  
+  .notification-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #E74C3C;
+    color: #ECF0F1;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8rem;
+  }
+  
+  @keyframes glow {
+    from { text-shadow: 0 0 5px #F1C40F; }
+    to { text-shadow: 0 0 10px #F1C40F; }
+  }
+  
+  .theme-toggle, .menu-toggle {
+    color: #ECF0F1;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+  }
+  
+  body.dark .theme-toggle, body.dark .menu-toggle, body.dark .notification-bell {
+    color: #F1C40F;
+  }
+  
+  .menu-dropdown {
+    background-color: #34495E;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  
+  body.dark .menu-dropdown {
+    background-color: #ECF0F1;
+  }
+  
+  .menu-item {
+    display: block;
+    color: #ECF0F1;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  body.dark .menu-item {
+    color: #2C3E50;
+  }
+  
+  .menu-item:hover, .menu-item:focus {
+    background-color: #3498DB;
+    color: #ECF0F1;
+  }
+  
+  body.dark .menu-item:hover, body.dark .menu-item:focus {
+    background-color: #F1C40F;
+    color: #2C3E50;
+  }
+  
+  .main-content {
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-actions {
+      gap: 0.5rem;
+    }
+  }
